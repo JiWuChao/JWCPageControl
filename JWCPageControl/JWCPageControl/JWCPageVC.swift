@@ -25,7 +25,7 @@ class JWCPageVC: UIViewController {
         rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         
         let config = JWCPageNavBarConfig.init(navFrame: CGRect(x: 0, y: 100, width: self.view.bounds.width, height: 44), isShowTrckLine: false, canScrollEnable: true, titleMargin: 25, firstTitleLeftMargin: 20, lastTitleRightMargin: 50, selectedCorlor: UIColor.init(red: 255/255, green: 126/255, blue: 0/255, alpha: 1), normalColor: UIColor.init(red: 45/255, green: 60/255, blue: 78/255, alpha: 0.3))
-        config.isNeedScale = true
+        config.isNeedScale = true;
         config.scaleRange = 1.4
         config.rightBarItem = rightBtn
         config.leftBarItem = leftBtn
@@ -41,7 +41,7 @@ class JWCPageVC: UIViewController {
     //        return navBar
     //    }()
     //
-    var titles:[String] = ["女神大作战","热门","绝地求生","秀场","英雄联盟","绝地求生2","秀场2","英雄联盟2","绝地求生3","秀场4","英雄联盟5"]
+    var titles:[String] = ["文学","历史","美术","军事帝国","英雄联盟","作家园地","网络小说","小道野史"]
     
     
     var pageControl:JWCPageControl = JWCPageControl(frame: CGRect.zero, config: JWCPageNavBarConfig())
@@ -51,11 +51,7 @@ class JWCPageVC: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         setPageControlView()
-        
-        //        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10) {
-        //            self.titles = ["第1个","第2个","第3个","第4个"]
-        //            self.pageControl.reloadData()
-        //        }
+    
         
     }
     
@@ -107,12 +103,11 @@ extension JWCPageVC:JWCPageNavDataSource {
     func pageNavBarTitles(pageNavBar: JWCPageNavBar) -> [String] {
         return titles
     }
+    
     func pageControlChildren(pageControl: JWCPageControl, viewAtIndex atIndex: Int) -> UIView {
         
         if atIndex == 1 {
-            let test = TestView.init(frame: self.view.bounds)
-            return test
-            
+            return TestView.init(frame: UIScreen.main.bounds)
         }
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))

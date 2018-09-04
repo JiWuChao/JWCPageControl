@@ -23,8 +23,6 @@ class JWCNAVBarVC: UIViewController {
         rightBtn.setTitle("right", for: .normal)
         rightBtn.setTitleColor(UIColor.white, for: .normal)
         rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        //LZPageNavBarConfig.init(navFrame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: 44), isShowTrckLine: true, canScrollEnable: true, titleMargin: 10, firstTitleLeftMargin: 10, lastTitleRightMargin: 10, selectedCorlor: UIColor.orange, normalColor: UIColor.black)
-        //    LZPageNavBarConfig.init(navFrame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: 44), coverBgColor: UIColor.black, coverAlpha: 0.5, coverMargin: 5, coverH: 25, coverRadius: 8, canScrollEnable: true, titleMargin: 20, firstTitleLeftMargin: 10, lastTitleRightMargin: 10, selectedColor: UIColor.red, normalColor: UIColor.black,isNeedScale:false,scaleRange:1.2)
         let config = JWCPageNavBarConfig.init(navFrame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: 44), isShowTrckLine: true, canScrollEnable: true, titleMargin: 10, firstTitleLeftMargin: 10, lastTitleRightMargin: 10, selectedCorlor: UIColor.orange, normalColor: UIColor.black)
         //        config.leftBarItem = leftBtn
         config.rightBarItem = rightBtn
