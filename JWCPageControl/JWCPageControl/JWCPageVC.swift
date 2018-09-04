@@ -28,6 +28,7 @@ class JWCPageVC: UIViewController {
         config.isNeedScale = true
         config.scaleRange = 1.4
         config.rightBarItem = rightBtn
+        config.leftBarItem = leftBtn
         config.defaultSelectedIndex = 0
         return config
     }()
