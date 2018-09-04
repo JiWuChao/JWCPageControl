@@ -461,7 +461,7 @@ extension JWCPageVC:JWCPageNavDataSource {
 
 ```
 
-![image](https://github.com/JiWuChao/JWCPageControl/blob/master/style/style4.gif?raw=true)
+![image](https://github.com/JiWuChao/JWCPageControl/blob/master/style/other3.gif?raw=true)
 
 ### 其他
 
