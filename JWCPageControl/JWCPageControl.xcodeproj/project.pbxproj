@@ -89,14 +89,46 @@
 		045D68DC213E2ECC00816723 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				045D68DD213E2ED700816723 /* JWCPageCache.swift */,
-				045D68ED213E2FCC00816723 /* JWCPageContainer.swift */,
-				045D68EF213E303300816723 /* JWCPageControl.swift */,
-				045D68E1213E2ED700816723 /* JWCPageNavBar.swift */,
-				045D68E2213E2ED700816723 /* JWCPageNavBarConfig.swift */,
-				045D68E3213E2ED800816723 /* UIColor+Middle.swift */,
+				048B41EB21E6EA3A006F9BCA /* Page */,
+				048B41EA21E6EA2F006F9BCA /* Color */,
+				048B41E921E6EA1B006F9BCA /* NavBar */,
+				048B41E821E6EA08006F9BCA /* Cache */,
 			);
 			path = PageControl;
+			sourceTree = "<group>";
+		};
+		048B41E821E6EA08006F9BCA /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				045D68DD213E2ED700816723 /* JWCPageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		048B41E921E6EA1B006F9BCA /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				045D68E1213E2ED700816723 /* JWCPageNavBar.swift */,
+				045D68E2213E2ED700816723 /* JWCPageNavBarConfig.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		048B41EA21E6EA2F006F9BCA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				045D68E3213E2ED800816723 /* UIColor+Middle.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		048B41EB21E6EA3A006F9BCA /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				045D68ED213E2FCC00816723 /* JWCPageContainer.swift */,
+				045D68EF213E303300816723 /* JWCPageControl.swift */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
