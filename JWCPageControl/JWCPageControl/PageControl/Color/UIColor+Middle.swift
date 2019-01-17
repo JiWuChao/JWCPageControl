@@ -10,9 +10,9 @@ import Foundation
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-   open class  func getMiddleColor(percent :CGFloat,currentColor:UIColor,endColor:UIColor) -> UIColor {
+   public class  func getMiddleColor(percent :CGFloat,currentColor:UIColor,endColor:UIColor) -> UIColor {
 
         var red1 : CGFloat = 0.0
         var green1 : CGFloat = 0.0
