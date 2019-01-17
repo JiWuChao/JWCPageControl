@@ -10,9 +10,9 @@
 		041769D021F06FE300055E13 /* UIColor+Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769C821F06FE300055E13 /* UIColor+Middle.swift */; };
 		041769D121F06FE300055E13 /* JWCPageNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CA21F06FE300055E13 /* JWCPageNavBarConfig.swift */; };
 		041769D221F06FE300055E13 /* JWCPageNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CB21F06FE300055E13 /* JWCPageNavBar.swift */; };
-		041769D321F06FE300055E13 /* JWCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CD21F06FE300055E13 /* JWCPageControl.swift */; };
-		041769D421F06FE300055E13 /* JWCPageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CE21F06FE300055E13 /* JWCPageCache.swift */; };
-		041769D521F06FE300055E13 /* JWCPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CF21F06FE300055E13 /* JWCPageContainer.swift */; };
+		041769DA21F070BD00055E13 /* JWCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769D721F070BD00055E13 /* JWCPageControl.swift */; };
+		041769DB21F070BD00055E13 /* JWCPageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769D821F070BD00055E13 /* JWCPageCache.swift */; };
+		041769DC21F070BD00055E13 /* JWCPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769D921F070BD00055E13 /* JWCPageContainer.swift */; };
 		045D68C4213E2EAC00816723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C2213E2EAC00816723 /* Main.storyboard */; };
 		045D68C6213E2EAD00816723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C5213E2EAD00816723 /* Assets.xcassets */; };
 		045D68C9213E2EAD00816723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C7213E2EAD00816723 /* LaunchScreen.storyboard */; };
@@ -27,9 +27,9 @@
 		041769C821F06FE300055E13 /* UIColor+Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Middle.swift"; sourceTree = "<group>"; };
 		041769CA21F06FE300055E13 /* JWCPageNavBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageNavBarConfig.swift; sourceTree = "<group>"; };
 		041769CB21F06FE300055E13 /* JWCPageNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageNavBar.swift; sourceTree = "<group>"; };
-		041769CD21F06FE300055E13 /* JWCPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageControl.swift; sourceTree = "<group>"; };
-		041769CE21F06FE300055E13 /* JWCPageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageCache.swift; sourceTree = "<group>"; };
-		041769CF21F06FE300055E13 /* JWCPageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageContainer.swift; sourceTree = "<group>"; };
+		041769D721F070BD00055E13 /* JWCPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageControl.swift; sourceTree = "<group>"; };
+		041769D821F070BD00055E13 /* JWCPageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageCache.swift; sourceTree = "<group>"; };
+		041769D921F070BD00055E13 /* JWCPageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageContainer.swift; sourceTree = "<group>"; };
 		045D68BB213E2EAC00816723 /* JWCPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWCPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D68C3213E2EAC00816723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045D68C5213E2EAD00816723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,14 +70,14 @@
 			path = NavBar;
 			sourceTree = "<group>";
 		};
-		041769CC21F06FE300055E13 /* PageControl */ = {
+		041769D621F070BD00055E13 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				041769CD21F06FE300055E13 /* JWCPageControl.swift */,
-				041769CE21F06FE300055E13 /* JWCPageCache.swift */,
-				041769CF21F06FE300055E13 /* JWCPageContainer.swift */,
+				041769D721F070BD00055E13 /* JWCPageControl.swift */,
+				041769D821F070BD00055E13 /* JWCPageCache.swift */,
+				041769D921F070BD00055E13 /* JWCPageContainer.swift */,
 			);
-			path = PageControl;
+			path = Page;
 			sourceTree = "<group>";
 		};
 		045D68B2213E2EAC00816723 = {
@@ -116,9 +116,9 @@
 		045D68DC213E2ECC00816723 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
+				041769D621F070BD00055E13 /* Page */,
 				041769C721F06FE300055E13 /* Color */,
 				041769C921F06FE300055E13 /* NavBar */,
-				041769CC21F06FE300055E13 /* PageControl */,
 			);
 			path = PageControl;
 			sourceTree = "<group>";
@@ -195,15 +195,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				045D68F6213E326900816723 /* TestView.swift in Sources */,
-				041769D521F06FE300055E13 /* JWCPageContainer.swift in Sources */,
+				041769DC21F070BD00055E13 /* JWCPageContainer.swift in Sources */,
 				041769D221F06FE300055E13 /* JWCPageNavBar.swift in Sources */,
 				045D68EB213E2F3300816723 /* AppDelegate.swift in Sources */,
-				041769D321F06FE300055E13 /* JWCPageControl.swift in Sources */,
+				041769DA21F070BD00055E13 /* JWCPageControl.swift in Sources */,
 				041769D021F06FE300055E13 /* UIColor+Middle.swift in Sources */,
 				045D68F4213E313E00816723 /* JWCNAVBarVC.swift in Sources */,
 				045D68EC213E2F3500816723 /* ViewController.swift in Sources */,
 				045D68F2213E311E00816723 /* JWCPageVC.swift in Sources */,
-				041769D421F06FE300055E13 /* JWCPageCache.swift in Sources */,
+				041769DB21F070BD00055E13 /* JWCPageCache.swift in Sources */,
 				041769D121F06FE300055E13 /* JWCPageNavBarConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -96,13 +96,13 @@ Pod::Spec.new do |s|
 
    
 
-  s.subspec 'Page' do |ss|
+  s.subspec 'PageControl' do |ss|
       ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Page/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/**/*'
       ss.dependency 'JWCPageControl/Navbar'
   end
-  s.subspec 'Cache' do |ss|
-      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Cache/**/*'
+  s.subspec 'Color' do |ss|
+      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Color/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/Cache/**/*'
   end
   s.subspec 'Navbar' do |ss|
