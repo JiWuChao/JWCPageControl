@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041769D021F06FE300055E13 /* UIColor+Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769C821F06FE300055E13 /* UIColor+Middle.swift */; };
+		041769D121F06FE300055E13 /* JWCPageNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CA21F06FE300055E13 /* JWCPageNavBarConfig.swift */; };
+		041769D221F06FE300055E13 /* JWCPageNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CB21F06FE300055E13 /* JWCPageNavBar.swift */; };
+		041769D321F06FE300055E13 /* JWCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CD21F06FE300055E13 /* JWCPageControl.swift */; };
+		041769D421F06FE300055E13 /* JWCPageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CE21F06FE300055E13 /* JWCPageCache.swift */; };
+		041769D521F06FE300055E13 /* JWCPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041769CF21F06FE300055E13 /* JWCPageContainer.swift */; };
 		045D68C4213E2EAC00816723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C2213E2EAC00816723 /* Main.storyboard */; };
 		045D68C6213E2EAD00816723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C5213E2EAD00816723 /* Assets.xcassets */; };
 		045D68C9213E2EAD00816723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045D68C7213E2EAD00816723 /* LaunchScreen.storyboard */; };
-		045D68E5213E2F2400816723 /* JWCPageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68DD213E2ED700816723 /* JWCPageCache.swift */; };
-		045D68E8213E2F2B00816723 /* JWCPageNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68E1213E2ED700816723 /* JWCPageNavBar.swift */; };
-		045D68E9213E2F2E00816723 /* JWCPageNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68E2213E2ED700816723 /* JWCPageNavBarConfig.swift */; };
-		045D68EA213E2F3000816723 /* UIColor+Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68E3213E2ED800816723 /* UIColor+Middle.swift */; };
 		045D68EB213E2F3300816723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68DE213E2ED700816723 /* AppDelegate.swift */; };
 		045D68EC213E2F3500816723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68E0213E2ED700816723 /* ViewController.swift */; };
-		045D68EE213E2FCD00816723 /* JWCPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68ED213E2FCC00816723 /* JWCPageContainer.swift */; };
-		045D68F0213E303300816723 /* JWCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68EF213E303300816723 /* JWCPageControl.swift */; };
 		045D68F2213E311E00816723 /* JWCPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68F1213E311E00816723 /* JWCPageVC.swift */; };
 		045D68F4213E313E00816723 /* JWCNAVBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68F3213E313E00816723 /* JWCNAVBarVC.swift */; };
 		045D68F6213E326900816723 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D68F5213E326900816723 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041769C821F06FE300055E13 /* UIColor+Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Middle.swift"; sourceTree = "<group>"; };
+		041769CA21F06FE300055E13 /* JWCPageNavBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageNavBarConfig.swift; sourceTree = "<group>"; };
+		041769CB21F06FE300055E13 /* JWCPageNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageNavBar.swift; sourceTree = "<group>"; };
+		041769CD21F06FE300055E13 /* JWCPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageControl.swift; sourceTree = "<group>"; };
+		041769CE21F06FE300055E13 /* JWCPageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageCache.swift; sourceTree = "<group>"; };
+		041769CF21F06FE300055E13 /* JWCPageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageContainer.swift; sourceTree = "<group>"; };
 		045D68BB213E2EAC00816723 /* JWCPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWCPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D68C3213E2EAC00816723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045D68C5213E2EAD00816723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045D68C8213E2EAD00816723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045D68CA213E2EAD00816723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045D68DD213E2ED700816723 /* JWCPageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCPageCache.swift; sourceTree = "<group>"; };
 		045D68DE213E2ED700816723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045D68E0213E2ED700816723 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		045D68E1213E2ED700816723 /* JWCPageNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCPageNavBar.swift; sourceTree = "<group>"; };
-		045D68E2213E2ED700816723 /* JWCPageNavBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCPageNavBarConfig.swift; sourceTree = "<group>"; };
-		045D68E3213E2ED800816723 /* UIColor+Middle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Middle.swift"; sourceTree = "<group>"; };
-		045D68ED213E2FCC00816723 /* JWCPageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageContainer.swift; sourceTree = "<group>"; };
-		045D68EF213E303300816723 /* JWCPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWCPageControl.swift; sourceTree = "<group>"; };
 		045D68F1213E311E00816723 /* JWCPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCPageVC.swift; sourceTree = "<group>"; };
 		045D68F3213E313E00816723 /* JWCNAVBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCNAVBarVC.swift; sourceTree = "<group>"; };
 		045D68F5213E326900816723 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -53,6 +53,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041769C721F06FE300055E13 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				041769C821F06FE300055E13 /* UIColor+Middle.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		041769C921F06FE300055E13 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				041769CA21F06FE300055E13 /* JWCPageNavBarConfig.swift */,
+				041769CB21F06FE300055E13 /* JWCPageNavBar.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		041769CC21F06FE300055E13 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				041769CD21F06FE300055E13 /* JWCPageControl.swift */,
+				041769CE21F06FE300055E13 /* JWCPageCache.swift */,
+				041769CF21F06FE300055E13 /* JWCPageContainer.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		045D68B2213E2EAC00816723 = {
 			isa = PBXGroup;
 			children = (
@@ -89,46 +116,11 @@
 		045D68DC213E2ECC00816723 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				048B41EB21E6EA3A006F9BCA /* Page */,
-				048B41EA21E6EA2F006F9BCA /* Color */,
-				048B41E921E6EA1B006F9BCA /* NavBar */,
-				048B41E821E6EA08006F9BCA /* Cache */,
+				041769C721F06FE300055E13 /* Color */,
+				041769C921F06FE300055E13 /* NavBar */,
+				041769CC21F06FE300055E13 /* PageControl */,
 			);
 			path = PageControl;
-			sourceTree = "<group>";
-		};
-		048B41E821E6EA08006F9BCA /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				045D68DD213E2ED700816723 /* JWCPageCache.swift */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		048B41E921E6EA1B006F9BCA /* NavBar */ = {
-			isa = PBXGroup;
-			children = (
-				045D68E1213E2ED700816723 /* JWCPageNavBar.swift */,
-				045D68E2213E2ED700816723 /* JWCPageNavBarConfig.swift */,
-			);
-			path = NavBar;
-			sourceTree = "<group>";
-		};
-		048B41EA21E6EA2F006F9BCA /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				045D68E3213E2ED800816723 /* UIColor+Middle.swift */,
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
-		048B41EB21E6EA3A006F9BCA /* Page */ = {
-			isa = PBXGroup;
-			children = (
-				045D68ED213E2FCC00816723 /* JWCPageContainer.swift */,
-				045D68EF213E303300816723 /* JWCPageControl.swift */,
-			);
-			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,17 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045D68EA213E2F3000816723 /* UIColor+Middle.swift in Sources */,
-				045D68E8213E2F2B00816723 /* JWCPageNavBar.swift in Sources */,
 				045D68F6213E326900816723 /* TestView.swift in Sources */,
-				045D68F0213E303300816723 /* JWCPageControl.swift in Sources */,
+				041769D521F06FE300055E13 /* JWCPageContainer.swift in Sources */,
+				041769D221F06FE300055E13 /* JWCPageNavBar.swift in Sources */,
 				045D68EB213E2F3300816723 /* AppDelegate.swift in Sources */,
-				045D68E5213E2F2400816723 /* JWCPageCache.swift in Sources */,
+				041769D321F06FE300055E13 /* JWCPageControl.swift in Sources */,
+				041769D021F06FE300055E13 /* UIColor+Middle.swift in Sources */,
 				045D68F4213E313E00816723 /* JWCNAVBarVC.swift in Sources */,
 				045D68EC213E2F3500816723 /* ViewController.swift in Sources */,
-				045D68EE213E2FCD00816723 /* JWCPageContainer.swift in Sources */,
-				045D68E9213E2F2E00816723 /* JWCPageNavBarConfig.swift in Sources */,
 				045D68F2213E311E00816723 /* JWCPageVC.swift in Sources */,
+				041769D421F06FE300055E13 /* JWCPageCache.swift in Sources */,
+				041769D121F06FE300055E13 /* JWCPageNavBarConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

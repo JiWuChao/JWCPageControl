@@ -15,81 +15,81 @@ import Foundation
 
 
 
-class JWCPageNavBarConfig {
+public class JWCPageNavBarConfig:NSObject {
     
-    var navFrame:CGRect = CGRect.zero
+   public var navFrame:CGRect = CGRect.zero
     
-    var navBarBackgroundColor:UIColor = UIColor.white
+   public var navBarBackgroundColor:UIColor = UIColor.white
     //默认选中第几个
-    var defaultSelectedIndex :Int = 0
+   public var defaultSelectedIndex :Int = 0
     
     //title的view是否可以左右滚动 一般情况下当title的个数固定的时候才需要设置为false
-    var canScrollEnable :Bool = false
+   public var canScrollEnable :Bool = false
     //MARK:颜色
     
     //普通的Title 颜色
-    var normalColor :UIColor = UIColor.white
+   public var normalColor :UIColor = UIColor.white
     //选中的Title的颜色
-    var selectedColor : UIColor = UIColor.black
+   public var selectedColor : UIColor = UIColor.black
     // Title的view的背景色
-    var titleNorBgColor :UIColor?
-    var titleSelectedBgColor :UIColor?
+   public var titleNorBgColor :UIColor?
+   public var titleSelectedBgColor :UIColor?
     
     //MARK:字体
     
     /// Title字体大小
-    var font : UIFont = UIFont.systemFont(ofSize: 14.0)
+   public var font : UIFont = UIFont.systemFont(ofSize: 14.0)
     /// 滚动Title的间距
-    var titleMargin : CGFloat = 0
+   public var titleMargin : CGFloat = 0
     /// titleView的高度
-    var titleHeight : CGFloat = 44
+   public var titleHeight : CGFloat = 44
     //第一个title 距离左边的距离
-    var firstTitleLeftMargin : CGFloat = 0
+   public var firstTitleLeftMargin : CGFloat = 0
     //最后一个title 距离右边的距离
-    var lastTitleRightMargin : CGFloat = 0
+   public var lastTitleRightMargin : CGFloat = 0
     
     //MARK:底部滚动条
     
     /// 是否显示底部滚动条
-    var isShowTrackLine : Bool = false
+   public var isShowTrackLine : Bool = false
     /// 底部滚动条颜色
-    var trackLineColor : UIColor = UIColor.orange
+   public var trackLineColor : UIColor = UIColor.orange
     /// 底部滚动条高度
-    var trackLineH : CGFloat = 2
+   public var trackLineH : CGFloat = 2
     /// 底部滚动条的宽度是否等宽 canScrollEnable 为 false 时有效isTrackDivide 表示宽度跟title的宽度一样
-    var isTrackDivide: Bool = false
+   public var isTrackDivide: Bool = false
     
     
     //MARK: bottomLine
     
-    var bottomLineColor : UIColor = UIColor.lightGray
+   public var bottomLineColor : UIColor = UIColor.lightGray
     
     //MARK:缩进
     
     /// 是否进行缩放
-    var isNeedScale : Bool = false
-    var scaleRange : CGFloat = 1.2
+   public var isNeedScale : Bool = false
+   public var scaleRange : CGFloat = 1.2
     
     //MARK:遮盖
     
     /// 是否显示遮盖
-    var isShowCover : Bool = false
+   public var isShowCover : Bool = false
     /// 遮盖背景颜色
-    var coverBgColor : UIColor = UIColor.lightGray
+   public var coverBgColor : UIColor = UIColor.lightGray
     //遮盖的alpha值
-    var coverAlpha : CGFloat = 0.7
+   public var coverAlpha : CGFloat = 0.7
     /// 文字&遮盖间隙
-    var coverMargin : CGFloat = 5
+   public var coverMargin : CGFloat = 5
     /// 遮盖的高度
-    var coverH : CGFloat = 25
+   public var coverH : CGFloat = 25
     
     /// 设置圆角大小
-    var coverRadius : CGFloat = 0
+   public var coverRadius : CGFloat = 0
     
     //MARK:左右BarItem
     
-    var leftBarItem : UIView = UIView.init(frame: CGRect.zero)
-    var rightBarItem : UIView = UIView.init(frame: CGRect.zero)
+   public var leftBarItem : UIView = UIView.init(frame: CGRect.zero)
+   public var rightBarItem : UIView = UIView.init(frame: CGRect.zero)
     
     
     /// 普通的样式
@@ -105,7 +105,7 @@ class JWCPageNavBarConfig {
     ///   - normalColor: 正常的字体颜色
     ///   - defaultSelectedIndex:  默认选中第几个
     ///   - font: title字体大小
-    convenience init(navFrame: CGRect,isShowTrckLine:Bool,
+   public convenience init(navFrame: CGRect,isShowTrckLine:Bool,
                      canScrollEnable:Bool,
                      titleMargin:CGFloat,
                      firstTitleLeftMargin:CGFloat,
@@ -145,7 +145,7 @@ class JWCPageNavBarConfig {
     ///   - font: title字体大小
     ///   - isNeedScale: 是否需要选中有放大/缩小的效果
     ///   - scaleRange: 放大/缩小的比例 ：只有在isNeedScale = true时才有效
-    convenience init(navFrame: CGRect,coverBgColor :UIColor,coverAlpha:CGFloat ,coverMargin:CGFloat,coverH:CGFloat,coverRadius:CGFloat,canScrollEnable:Bool, titleMargin:CGFloat, firstTitleLeftMargin:CGFloat, lastTitleRightMargin:CGFloat, selectedColor:UIColor, normalColor:UIColor, defaultSelectedIndex:Int = 0,font:UIFont = UIFont.systemFont(ofSize: 14),isNeedScale:Bool,scaleRange:CGFloat) {
+   public convenience init(navFrame: CGRect,coverBgColor :UIColor,coverAlpha:CGFloat ,coverMargin:CGFloat,coverH:CGFloat,coverRadius:CGFloat,canScrollEnable:Bool, titleMargin:CGFloat, firstTitleLeftMargin:CGFloat, lastTitleRightMargin:CGFloat, selectedColor:UIColor, normalColor:UIColor, defaultSelectedIndex:Int = 0,font:UIFont = UIFont.systemFont(ofSize: 14),isNeedScale:Bool,scaleRange:CGFloat) {
         self.init()
         self.isShowCover = true
         self.navFrame = navFrame
@@ -168,7 +168,7 @@ class JWCPageNavBarConfig {
     
 
     
-   convenience init(navFrame:CGRect) {
+  public convenience init(navFrame:CGRect) {
         self.init()
     }
     

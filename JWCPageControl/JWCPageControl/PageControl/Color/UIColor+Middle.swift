@@ -12,7 +12,7 @@ import UIKit
 
 extension UIColor {
     
-    class  func getMiddleColor(percent :CGFloat,currentColor:UIColor,endColor:UIColor) -> UIColor {
+   open class  func getMiddleColor(percent :CGFloat,currentColor:UIColor,endColor:UIColor) -> UIColor {
 
         var red1 : CGFloat = 0.0
         var green1 : CGFloat = 0.0

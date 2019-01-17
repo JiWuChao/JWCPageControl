@@ -8,37 +8,37 @@
 
 import UIKit
 
-class JWCPageCache: NSObject {
+public class JWCPageCache: NSObject {
 
    fileprivate var dic = [Int : UIView]()
     
-    func hasCache(subIndex index:Int) -> Bool {
+   public func hasCache(subIndex index:Int) -> Bool {
         if (dic[index] != nil) {
             return true
         }
         return false
     }
-    func cacheObj(cacheObj obj:UIView , atIndex index:Int)  {
+   public func cacheObj(cacheObj obj:UIView , atIndex index:Int)  {
         dic[index] = obj
     }
     
-    func getCacheObj(atIndex index:Int) -> UIView? {
+   public func getCacheObj(atIndex index:Int) -> UIView? {
         if hasCache(subIndex: index) {
             return dic[index]
         }
         return nil
     }
     
-    func getAll() -> [Int : UIView] {
+   public func getAll() -> [Int : UIView] {
         return dic
     }
     
-    func removeObj(objIndex atIndex:Int)  {
+   public func removeObj(objIndex atIndex:Int)  {
         if hasCache(subIndex: atIndex) {
             dic.removeValue(forKey: atIndex)
         }
     }
-    func removeAll() {
+   public func removeAll() {
         dic.removeAll()
     }
     

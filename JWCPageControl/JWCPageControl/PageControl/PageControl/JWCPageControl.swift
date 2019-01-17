@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol JWCPageControlDelegate:class {
+public protocol JWCPageControlDelegate:class {
     //点击了左边的bar
     func pageControlDidselectedLeftBar(control:JWCPageControl)
     //点击了右边的bar
@@ -19,7 +19,7 @@ protocol JWCPageControlDelegate:class {
 }
 
 
-protocol JWCPageControlDataSource:class  {
+public protocol JWCPageControlDataSource:class  {
     //titles
     func pageControlTitles(control:JWCPageControl) -> [String]
     //views
@@ -28,22 +28,23 @@ protocol JWCPageControlDataSource:class  {
 }
 
 
-class JWCPageControl: UIView {
+public class JWCPageControl: UIView {
     
-   weak var delegate : JWCPageControlDelegate?
-   weak var dataSource : JWCPageControlDataSource?
+   public weak var delegate : JWCPageControlDelegate?
+   public weak var dataSource : JWCPageControlDataSource?
    fileprivate var config:JWCPageNavBarConfig = JWCPageNavBarConfig()
    fileprivate var navBar : JWCPageNavBar?
    fileprivate  var container :JWCPageContainer?
-    fileprivate var lastShowIndex: Int = -1
-    init(frame: CGRect,config : JWCPageNavBarConfig) {
+   fileprivate var lastShowIndex: Int = -1
+    
+   public init(frame: CGRect,config : JWCPageNavBarConfig) {
         self.config = config
         super.init(frame: frame)
         self.backgroundColor = self.config.navBarBackgroundColor
         setupUI()
      }
    
-    func reloadData() {
+   public func reloadData() {
         self.navBar?.reloadData()
         self.container?.reloadData(selectedIndex: config.defaultSelectedIndex)
     }
@@ -70,7 +71,7 @@ class JWCPageControl: UIView {
         return titles
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         config.navFrame = CGRect.init(x: config.navFrame.origin.x, y: config.navFrame.origin.y, width: self.bounds.width, height: config.navFrame.height)
         navBar?.frame = config.navFrame
@@ -82,7 +83,7 @@ class JWCPageControl: UIView {
 
 //对外方法
 extension JWCPageControl {
-    func updateIndex(scrollToIndex tIndex:Int) {
+   public func updateIndex(scrollToIndex tIndex:Int) {
         container?.scrollToIndexToIndex(fromIndex: 0, toIndex: tIndex, withAnimated: false)
         navBar?.scrollToIndex(toIndex: tIndex)
         delegate?.pageControl(control: self, showIndex: tIndex)
@@ -91,7 +92,7 @@ extension JWCPageControl {
 
 
 extension JWCPageControl :JWCPageNavBarDelegate {
-    func pageNavBarDidSelected(pageNavBar: JWCPageNavBar, oldIndex oIndex: Int, oldObj: UILabel, newIndex nIndex: Int, newObj: UILabel) {
+    public func pageNavBarDidSelected(pageNavBar: JWCPageNavBar, oldIndex oIndex: Int, oldObj: UILabel, newIndex nIndex: Int, newObj: UILabel) {
         let ani = abs(nIndex - oIndex) > 1
         //内部联动
         container?.scrollToIndexToIndex(fromIndex: oIndex, toIndex: nIndex, withAnimated: !ani)
@@ -99,17 +100,17 @@ extension JWCPageControl :JWCPageNavBarDelegate {
         delegate?.pageControl(control: self, showIndex: nIndex)
     }
   
-    func pageNavBarDidSelectedLeftBar(pageNavBar: JWCPageNavBar) {
+    public func pageNavBarDidSelectedLeftBar(pageNavBar: JWCPageNavBar) {
         delegate?.pageControlDidselectedLeftBar(control: self)
     }
-    func pageNavBarDidSelectedRightBar(pageNavBar: JWCPageNavBar) {
+    public func pageNavBarDidSelectedRightBar(pageNavBar: JWCPageNavBar) {
         delegate?.pageControlDidselectedRightBar(control: self)
     }
 }
 
 extension JWCPageControl :JWCPageNavDataSource {
     
-    func pageNavBarTitles(pageNavBar: JWCPageNavBar) -> [String] {
+    public func pageNavBarTitles(pageNavBar: JWCPageNavBar) -> [String] {
         if titlesArray() == nil {
             return [String]()
         }

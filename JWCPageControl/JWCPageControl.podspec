@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   `echo "4.0" > .swift-version` 
 
   s.name         = "JWCPageControl"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "pagecontrl组件，符合大众的样式，具体细节可配置，适合腾讯，简书，掘金，头条等主流APP样式"
 
   # This description is used to generate tags and improve search results.
@@ -55,7 +55,6 @@ Pod::Spec.new do |s|
 
   s.author             = { "JiWuChao" => "jiwuchao123@gmail.com" }
   # Or just: s.author    = "JiWuChao"
-  # s.authors            = { "JiWuChao" => "email@address.com" }
   # s.social_media_url   = "http://www.wuchao.net.cn/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -98,21 +97,21 @@ Pod::Spec.new do |s|
    
 
   s.subspec 'Page' do |ss|
-      ss.source_files = 'JWCPageControl/PageControl/Page/**/*'
+      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Page/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/**/*'
       ss.dependency 'JWCPageControl/Navbar'
   end
   s.subspec 'Cache' do |ss|
-      ss.source_files = 'JWCPageControl/PageControl/Cache/**/*'
+      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Cache/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/Cache/**/*'
   end
   s.subspec 'Navbar' do |ss|
-      ss.source_files = 'JWCPageControl/PageControl/Navbar/**/*'
+      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Navbar/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/Navbar/**/*'
   end
 
   s.subspec 'Color' do |ss|
-      ss.source_files = 'JWCPageControl/PageControl/Color/**/*'
+      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Color/**/*'
       #ss.public_header_files = 'JWCPageControl/PageControl/Color/**/*'
   end
 

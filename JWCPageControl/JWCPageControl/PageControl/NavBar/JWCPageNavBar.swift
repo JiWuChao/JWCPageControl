@@ -11,7 +11,7 @@ import UIKit
 let splitLineH:CGFloat = 0.5
 
 
-protocol JWCPageNavBarDelegate : class {
+public protocol JWCPageNavBarDelegate : class {
     //选中了某一个title Select
     func pageNavBarDidSelected(pageNavBar:JWCPageNavBar ,oldIndex oIndex:Int ,oldObj:UILabel,newIndex nIndex:Int ,newObj:UILabel)
 
@@ -34,21 +34,21 @@ extension JWCPageNavBarDelegate {
 }
 
 
-protocol JWCPageNavDataSource :class {
+public protocol JWCPageNavDataSource :class {
     //返回title数组
     func pageNavBarTitles(pageNavBar:JWCPageNavBar) -> [String]
     
 }
 
 
-class JWCPageNavBar: UIView {
+public class JWCPageNavBar: UIView {
 
     weak var delegate : JWCPageNavBarDelegate?
     weak var dataSource :JWCPageNavDataSource?
     fileprivate var titles :[String]?
     fileprivate var config : JWCPageNavBarConfig
     
-    var currentIndex :Int = 0
+   public var currentIndex :Int = 0
     
     fileprivate var currentLbl:UILabel? {
         guard currentIndex < titleLabels.count else {
@@ -103,7 +103,7 @@ class JWCPageNavBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         setupLayout()
         setupTitleLbls()
@@ -309,7 +309,7 @@ extension JWCPageNavBar {
     }
     
     fileprivate  func getTitleLblFrame(title:String ,font:UIFont) -> CGRect {
-        let rect = (title as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options:.truncatesLastVisibleLine, attributes: [NSAttributedStringKey.font:font], context: nil)
+        let rect = (title as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options:.truncatesLastVisibleLine, attributes: [NSAttributedString.Key.font:font], context: nil)
         return rect
     }
     
