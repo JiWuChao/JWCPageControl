@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   `echo "4.0" > .swift-version` 
 
   s.name         = "JWCPageControl"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "pagecontrl组件，符合大众的样式，具体细节可配置，适合腾讯，简书，掘金，头条等主流APP样式"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source           = { :git => 'https://github.com/JiWuChao/MyPrivatePodSpec.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/JiWuChao/JWCPageControl.git', :tag => s.version.to_s ,:submodules=>true}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
