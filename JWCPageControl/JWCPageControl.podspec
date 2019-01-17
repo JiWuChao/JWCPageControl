@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   `echo "4.0" > .swift-version` 
 
   s.name         = "JWCPageControl"
-  s.version      = "0.1.5"
+  s.version      = "0.1.6"
   s.summary      = "pagecontrl组件，符合大众的样式，具体细节可配置，适合腾讯，简书，掘金，头条等主流APP样式"
 
   # This description is used to generate tags and improve search results.
@@ -95,11 +95,11 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec 'Page' do |ss|
-      ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Page/**/*'
-      ss.dependency 'JWCPageControl/Navbar'
-      ss.dependency 'JWCPageControl/Color'
-  end
+#s.subspec 'Page' do |ss|
+#     ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Page/**/*'
+#    ss.dependency 'JWCPageControl/Navbar'
+#     ss.dependency 'JWCPageControl/Color'
+#end
   s.subspec 'Color' do |ss|
       ss.source_files = 'JWCPageControl/JWCPageControl/PageControl/Color/**/*'
   end
